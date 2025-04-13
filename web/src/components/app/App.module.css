@@ -1,0 +1,129 @@
+/* web/src/components/app/App.module.css */
+.container {
+  --lane-width: 272px;
+  contain: content;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.tabs {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 10px 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.viewSelector {
+  flex: 1;
+}
+
+.viewSelect {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  font-size: 14px;
+  color: var(--text-normal);
+}
+
+.layoutTabs {
+  display: flex;
+  gap: 8px;
+}
+
+.tabButton {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: var(--text-normal);
+}
+
+.tabButton:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.activeTab {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
+}
+
+.viewContainer {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulse {
+  width: 60px;
+  height: 60px;
+  background-color: var(--text-faint);
+  border-radius: 100%;
+  animation: pulse 1.2s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.markdownPreview {
+  padding: 16px;
+  border-top: 1px solid var(--background-modifier-border);
+  background-color: var(--background-secondary);
+}
+
+.markdownPreview h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.markdownPreview pre {
+  background-color: var(--background-primary);
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  overflow: auto;
+  white-space: pre-wrap;
+}

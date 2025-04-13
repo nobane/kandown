@@ -1,0 +1,40 @@
+/* web/src/components/board/KanbanBoard.module.css */
+.container {
+  display: inline-grid;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.containerHeader {
+  display: flex;
+  width: 100%;
+}
+
+.customItemWrapper {
+  margin-bottom: 4px;
+}
+
+.dragOverlayWrapper {
+  transform: scale(1.05);
+  box-shadow: 0 0px 15px rgba(34, 33, 81, 0.2);
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.addColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.addColumn:hover {
+  color: var(--text-normal);
+}

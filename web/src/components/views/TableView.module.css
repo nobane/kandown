@@ -1,0 +1,147 @@
+/* web/src/components/views/TableView.module.css */
+.tableView {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrapper {
+  flex: 1;
+  padding: 0 16px 40px;
+  overflow: auto;
+}
+
+.wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.wrapper th,
+.wrapper td {
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.875rem;
+  padding: 0;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.cellWrapper {
+  height: 100%;
+  padding: 8px 12px;
+}
+
+.checkboxColumn {
+  width: 60px;
+}
+
+.tableHeader {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.headerSort {
+  line-height: 1;
+  color: var(--text-faint);
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.tableHeader:hover .headerSort {
+  background-color: var(--background-modifier-hover);
+}
+
+.statusCell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statusSelector {
+  position: relative;
+}
+
+.statusSelect {
+  background: transparent;
+  border: none;
+  color: var(--text-normal);
+  font-size: 0.875rem;
+  padding: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.statusSelect:focus {
+  outline: none;
+  background-color: var(--background-modifier-hover);
+}
+
+.addButton {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.addButton:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.buttonIcon {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.addForm {
+  margin: 0 16px 16px;
+  padding: 16px;
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.formHeader h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  color: var(--text-muted);
+}
+
+.closeButton:hover {
+  color: var(--text-normal);
+}
+
+.isComplete {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}

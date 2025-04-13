@@ -1,0 +1,4 @@
+[alias]
+example = "run --example"
+
+xtask = "run --package xtask --"

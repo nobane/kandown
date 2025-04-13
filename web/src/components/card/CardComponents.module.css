@@ -1,0 +1,67 @@
+/* web/src/components/card/CardComponents.module.css */
+.handle {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  touch-action: none;
+  cursor: grab;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  appearance: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.handle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.handle:focus-visible {
+  box-shadow: 0 0px 0px 2px #4c9ffe;
+}
+
+.handle svg {
+  flex: 0 0 auto;
+  margin: auto;
+  height: 100%;
+  overflow: visible;
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.remove {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  touch-action: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  appearance: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+.remove:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.remove:focus-visible {
+  box-shadow: 0 0px 0px 2px #4c9ffe;
+}
+
+.remove svg {
+  flex: 0 0 auto;
+  margin: auto;
+  height: 100%;
+  overflow: visible;
+  fill: rgba(0, 0, 0, 0.5);
+}
